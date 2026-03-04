@@ -1,6 +1,6 @@
 # 📦 **Supply Chain Analysis (SQL Project)**
 
-### 📌 Project Overview
+### 📌 **Project Overview**
 
 This project analyzes **supply chain stock-out problems using SQL**.  
 A retail company operating multiple warehouses has been facing frequent product shortages, leading to **lost sales, delayed deliveries, and customer dissatisfaction**.
@@ -18,7 +18,7 @@ This project demonstrates strong skills in **SQL querying, data analysis, and bu
 
 ---
 
-## 🎯 Objectives
+## 🎯 **Objectives**
 
 The main goals of this project are:
 
@@ -31,7 +31,7 @@ The main goals of this project are:
 
 ---
 
-## 🗂 Database Schema
+## 🗂 **Database Schema**
 
 The project uses a **relational database structure** with the following tables.
 
@@ -87,11 +87,11 @@ Tracks procurement orders from suppliers.
 
 ---
 
-## 📊 Key Performance Indicators (KPIs)
+## 📊 **Key Performance Indicators (KPIs)**
 
 This project calculates several important **inventory and supply chain metrics**.
 
-### Inventory KPIs
+### **Inventory KPIs**
 
 - **Stock-out Frequency**
 - **Stock-out Duration**
@@ -99,20 +99,20 @@ This project calculates several important **inventory and supply chain metrics**
 - **Inventory Turnover Ratio**
 - **Reorder Point Breaches**
 
-## Supplier KPIs
+## **Supplier KPIs**
 
 - **Supplier On-Time Delivery Rate**
 - **Average Delivery Delay**
 - **Supplier Lead Time Variability**
 - **Supplier Impact on Stock-Out Incidents**
 
-### Warehouse KPIs
+### **Warehouse KPIs**
 
 - **Warehouse Demand Pressure Index**
 - **Stock Availability Percentage**
 - **Warehouse Throughput**
 
-### Product & Category KPIs
+### **Product & Category KPIs**
 
 - **Fast-moving vs Slow-moving products**
 - **Category revenue contribution**
@@ -121,37 +121,37 @@ This project calculates several important **inventory and supply chain metrics**
 
 ---
 
-## 🔍 SQL Analysis Performed
+## 🔍 **SQL Analysis Performed**
 
 The project includes **150+ analytical SQL queries** to study supply chain performance.
 
-#### Stock-Out Analysis
+#### **Stock-Out Analysis**
 
 - Identify dates when products went out of stock
 - Find products with the highest stock-out frequency
 - Detect continuous stock-out streaks
 - Identify warehouses with the most stock-out events
 
-#### Inventory Analysis
+#### **Inventory Analysis**
 
 - Calculate inventory turnover ratio
 - Detect unusual demand spikes
 - Identify inventory discrepancies
 - Analyze stock movement trends
 
-#### Warehouse Performance
+#### **Warehouse Performance**
 
 - Rank warehouses by sales volume
 - Detect underperforming warehouses
 - Analyze warehouse demand pressure
 
-#### Supplier Performance
+#### **Supplier Performance**
 
 - Measure supplier delivery delays
 - Identify suppliers causing stock shortages
 - Evaluate supplier reliability
 
-#### Demand Analysis
+#### **Demand Analysis**
 
 - Identify top-selling products
 - Detect seasonal demand patterns
@@ -159,7 +159,7 @@ The project includes **150+ analytical SQL queries** to study supply chain perfo
 
 ---
 
-## 🛠 Technologies Used
+## 🛠 **Technologies Used**
 
 - **SQL**
 - **Relational Database Design**
@@ -176,7 +176,7 @@ Optional tools for visualization:
 
 ---
 
-## 📈 Key Insights
+## 📈 **Key Insights**
 
 This analysis helps identify:
 
@@ -189,7 +189,7 @@ These insights help businesses **reduce stock-outs, improve supplier coordinatio
 
 ---
 
-## 📁 Project Files
+## 📁 **Project Files**
 
 This repository contains:
 
