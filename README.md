@@ -1,6 +1,6 @@
-# 📦 Supply Chain Stock-Out Analysis (SQL Project)
+## 📦 Supply Chain Stock-Out Analysis (SQL Project)
 
-## 📌 Project Overview
+### 📌 Project Overview
 
 This project analyzes **supply chain stock-out problems using SQL**.  
 A retail company operating multiple warehouses has been facing frequent product shortages, leading to **lost sales, delayed deliveries, and customer dissatisfaction**.
@@ -18,7 +18,7 @@ This project demonstrates strong skills in **SQL querying, data analysis, and bu
 
 ---
 
-# 🎯 Objectives
+## 🎯 Objectives
 
 The main goals of this project are:
 
@@ -31,11 +31,11 @@ The main goals of this project are:
 
 ---
 
-# 🗂 Database Schema
+## 🗂 Database Schema
 
 The project uses a **relational database structure** with the following tables.
 
-## 1. Products
+### 1. Products
 
 Stores information about each product.
 
@@ -44,14 +44,14 @@ Stores information about each product.
 - `category`
 - `unit_price`
 
-## 2. Warehouses
+### 2. Warehouses
 
 Stores warehouse location details.
 
 - `warehouse_id`
 - `warehouse_location`
 
-## 3. Inventory
+### 3. Inventory
 
 Tracks daily stock movement for each product in each warehouse.
 
@@ -64,7 +64,7 @@ Tracks daily stock movement for each product in each warehouse.
 - `quantity_sold`
 - `closing_stock`
 
-## 4. Suppliers
+### 4. Suppliers
 
 Stores supplier information and delivery performance.
 
@@ -72,7 +72,7 @@ Stores supplier information and delivery performance.
 - `supplier_name`
 - `on_time_delivery_rate`
 
-## 5. Purchase Orders
+### 5. Purchase Orders
 
 Tracks procurement orders from suppliers.
 
@@ -87,11 +87,11 @@ Tracks procurement orders from suppliers.
 
 ---
 
-# 📊 Key Performance Indicators (KPIs)
+## 📊 Key Performance Indicators (KPIs)
 
 This project calculates several important **inventory and supply chain metrics**.
 
-## Inventory KPIs
+### Inventory KPIs
 
 - **Stock-out Frequency**
 - **Stock-out Duration**
@@ -106,13 +106,13 @@ This project calculates several important **inventory and supply chain metrics**
 - **Supplier Lead Time Variability**
 - **Supplier Impact on Stock-Out Incidents**
 
-## Warehouse KPIs
+### Warehouse KPIs
 
 - **Warehouse Demand Pressure Index**
 - **Stock Availability Percentage**
 - **Warehouse Throughput**
 
-## Product & Category KPIs
+### Product & Category KPIs
 
 - **Fast-moving vs Slow-moving products**
 - **Category revenue contribution**
@@ -121,37 +121,37 @@ This project calculates several important **inventory and supply chain metrics**
 
 ---
 
-# 🔍 SQL Analysis Performed
+## 🔍 SQL Analysis Performed
 
 The project includes **150+ analytical SQL queries** to study supply chain performance.
 
-### Stock-Out Analysis
+#### Stock-Out Analysis
 
 - Identify dates when products went out of stock
 - Find products with the highest stock-out frequency
 - Detect continuous stock-out streaks
 - Identify warehouses with the most stock-out events
 
-### Inventory Analysis
+#### Inventory Analysis
 
 - Calculate inventory turnover ratio
 - Detect unusual demand spikes
 - Identify inventory discrepancies
 - Analyze stock movement trends
 
-### Warehouse Performance
+#### Warehouse Performance
 
 - Rank warehouses by sales volume
 - Detect underperforming warehouses
 - Analyze warehouse demand pressure
 
-### Supplier Performance
+#### Supplier Performance
 
 - Measure supplier delivery delays
 - Identify suppliers causing stock shortages
 - Evaluate supplier reliability
 
-### Demand Analysis
+#### Demand Analysis
 
 - Identify top-selling products
 - Detect seasonal demand patterns
@@ -159,7 +159,7 @@ The project includes **150+ analytical SQL queries** to study supply chain perfo
 
 ---
 
-# 🛠 Technologies Used
+## 🛠 Technologies Used
 
 - **SQL**
 - **Relational Database Design**
@@ -176,7 +176,7 @@ Optional tools for visualization:
 
 ---
 
-# 📈 Key Insights
+## 📈 Key Insights
 
 This analysis helps identify:
 
@@ -189,19 +189,7 @@ These insights help businesses **reduce stock-outs, improve supplier coordinatio
 
 ---
 
-# 💡 Business Recommendations
-
-Based on the analysis, the following improvements are suggested:
-
-- Maintain **safety stock for fast-moving products**
-- Improve **supplier delivery monitoring**
-- Optimize **reorder points**
-- Balance inventory distribution across warehouses
-- Use **demand forecasting to plan replenishment**
-
----
-
-# 📁 Project Files
+## 📁 Project Files
 
 This repository contains:
 
