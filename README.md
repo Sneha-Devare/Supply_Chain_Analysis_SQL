@@ -1,4 +1,4 @@
-## 📦 Supply Chain Stock-Out Analysis (SQL Project)
+# 📦 **Supply Chain Analysis (SQL Project)**
 
 ### 📌 Project Overview
 
