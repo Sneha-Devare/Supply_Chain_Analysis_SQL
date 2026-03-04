@@ -1,94 +1,216 @@
-# 🚚 **Supply Chain Analysis**  
-### **SQL Data Analysis Project**
+# 📦 Supply Chain Stock-Out Analysis (SQL Project)
+
+## 📌 Project Overview
+
+This project analyzes **supply chain stock-out problems using SQL**.  
+A retail company operating multiple warehouses has been facing frequent product shortages, leading to **lost sales, delayed deliveries, and customer dissatisfaction**.
+
+The aim of this project is to perform **data-driven analysis using SQL** to identify when and why stock-outs occur and to generate insights that improve **inventory management and supply chain efficiency**.
+
+The analysis focuses on:
+
+- **Products frequently going out of stock**
+- **Warehouses experiencing the highest demand pressure**
+- **Supplier delivery delays**
+- **Demand trends and inventory movement**
+
+This project demonstrates strong skills in **SQL querying, data analysis, and business insight generation**.
 
 ---
 
-## 📌 **Project Overview**
-This project focuses on analyzing **supply chain data** using **SQL** to understand product flow, supplier performance, inventory behavior, and order fulfillment efficiency.  
-The goal is to extract meaningful business insights that help organizations **reduce costs, improve delivery performance, and optimize inventory management**.
+# 🎯 Objectives
+
+The main goals of this project are:
+
+- Identify **when and where stock-outs occur**
+- Detect **products with the highest stock-out frequency**
+- Analyze **supplier delays affecting inventory availability**
+- Evaluate **warehouse performance and efficiency**
+- Calculate **important supply chain KPIs**
+- Provide **data-driven recommendations to improve inventory planning**
 
 ---
 
-## 🎯 **Project Objectives**
-- Analyze supply chain operations using SQL queries  
-- Understand supplier and product performance  
-- Identify inventory and delivery inefficiencies  
-- Track order fulfillment and delays  
-- Support data-driven decisions in supply chain management  
+# 🗂 Database Schema
+
+The project uses a **relational database structure** with the following tables.
+
+## 1. Products
+
+Stores information about each product.
+
+- `product_id`
+- `product_name`
+- `category`
+- `unit_price`
+
+## 2. Warehouses
+
+Stores warehouse location details.
+
+- `warehouse_id`
+- `warehouse_location`
+
+## 3. Inventory
+
+Tracks daily stock movement for each product in each warehouse.
+
+- `inventory_id`
+- `product_id`
+- `warehouse_id`
+- `date`
+- `opening_stock`
+- `quantity_received`
+- `quantity_sold`
+- `closing_stock`
+
+## 4. Suppliers
+
+Stores supplier information and delivery performance.
+
+- `supplier_id`
+- `supplier_name`
+- `on_time_delivery_rate`
+
+## 5. Purchase Orders
+
+Tracks procurement orders from suppliers.
+
+- `order_id`
+- `product_id`
+- `supplier_id`
+- `order_date`
+- `expected_delivery_date`
+- `actual_delivery_date`
+- `order_quantity`
+- `unit_cost`
 
 ---
 
-## 🗂 **Dataset Description**
-The dataset contains structured supply chain data related to:
+# 📊 Key Performance Indicators (KPIs)
 
-- Products and categories  
-- Suppliers and locations  
-- Inventory levels  
-- Orders and shipment details  
-- Delivery status and timelines  
+This project calculates several important **inventory and supply chain metrics**.
 
-The data is stored in relational tables and analyzed using SQL queries.
+## Inventory KPIs
+
+- **Stock-out Frequency**
+- **Stock-out Duration**
+- **Average Closing Stock**
+- **Inventory Turnover Ratio**
+- **Reorder Point Breaches**
+
+## Supplier KPIs
+
+- **Supplier On-Time Delivery Rate**
+- **Average Delivery Delay**
+- **Supplier Lead Time Variability**
+- **Supplier Impact on Stock-Out Incidents**
+
+## Warehouse KPIs
+
+- **Warehouse Demand Pressure Index**
+- **Stock Availability Percentage**
+- **Warehouse Throughput**
+
+## Product & Category KPIs
+
+- **Fast-moving vs Slow-moving products**
+- **Category revenue contribution**
+- **Product profitability**
+- **Demand stability score**
 
 ---
 
-## 🛠 **Tools & Technologies Used**
+# 🔍 SQL Analysis Performed
+
+The project includes **150+ analytical SQL queries** to study supply chain performance.
+
+### Stock-Out Analysis
+
+- Identify dates when products went out of stock
+- Find products with the highest stock-out frequency
+- Detect continuous stock-out streaks
+- Identify warehouses with the most stock-out events
+
+### Inventory Analysis
+
+- Calculate inventory turnover ratio
+- Detect unusual demand spikes
+- Identify inventory discrepancies
+- Analyze stock movement trends
+
+### Warehouse Performance
+
+- Rank warehouses by sales volume
+- Detect underperforming warehouses
+- Analyze warehouse demand pressure
+
+### Supplier Performance
+
+- Measure supplier delivery delays
+- Identify suppliers causing stock shortages
+- Evaluate supplier reliability
+
+### Demand Analysis
+
+- Identify top-selling products
+- Detect seasonal demand patterns
+- Forecast demand using SQL window functions
+
+---
+
+# 🛠 Technologies Used
+
 - **SQL**
-- **Relational Database**
-- **SQL Queries** for data extraction and analysis  
+- **Relational Database Design**
+- **Joins**
+- **Aggregations**
+- **Window Functions**
+- **CTEs (Common Table Expressions)**
+
+Optional tools for visualization:
+
+- **Power BI**
+- **Tableau**
+- **Excel**
 
 ---
 
-## 🔍 **Project Workflow**
+# 📈 Key Insights
 
-### 1️⃣ **Data Understanding**
-- Reviewed table structures and relationships  
-- Identified key columns such as product, supplier, order, and delivery details  
-- Understood business meaning of each table  
+This analysis helps identify:
 
----
+- Products that frequently run out of stock
+- Warehouses facing high demand pressure
+- Suppliers responsible for delivery delays
+- Demand trends affecting inventory levels
 
-### 2️⃣ **Data Analysis Using SQL**
-Performed analysis using SQL queries including:
-
-- `SELECT`, `WHERE`, `ORDER BY`, `GROUP BY`  
-- Aggregate functions (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`)  
-- Joins (`INNER JOIN`, `LEFT JOIN`)  
-- Subqueries for advanced analysis  
+These insights help businesses **reduce stock-outs, improve supplier coordination, and optimize inventory planning**.
 
 ---
 
-## 📊 **Key Analysis Performed**
-- Supplier-wise order count and performance  
-- Product-wise demand analysis  
-- Inventory level monitoring  
-- Order fulfillment and delivery status analysis  
-- Identification of delayed or incomplete shipments  
+# 💡 Business Recommendations
+
+Based on the analysis, the following improvements are suggested:
+
+- Maintain **safety stock for fast-moving products**
+- Improve **supplier delivery monitoring**
+- Optimize **reorder points**
+- Balance inventory distribution across warehouses
+- Use **demand forecasting to plan replenishment**
 
 ---
 
-## 📈 **Key Insights**
-- Certain suppliers handled higher order volumes consistently  
-- Some products showed frequent stock shortages  
-- Delayed deliveries impacted overall supply chain efficiency  
-- Inventory imbalance highlighted areas for optimization  
+# 📁 Project Files
+
+This repository contains:
+
+- **Database schema**
+- **SQL analysis queries**
+- **Supply chain dataset**
+- **Business insights report**
+- **Optional dashboard (Power BI / Tableau)**
 
 ---
 
-## 🧾 **Conclusion**
-This project demonstrates how **SQL can be effectively used** to analyze supply chain operations and uncover actionable business insights.  
-The analysis helps in improving **inventory planning, supplier evaluation, and delivery performance**.
-
----
-
-## 🔮 **Future Enhancements**
-- Integrate data with visualization tools like **Power BI or Tableau**  
-- Perform time-based trend analysis  
-- Automate reports using scheduled queries  
-- Combine SQL analysis with Python for deeper insights  
-
----
-
-## 👩‍💻 **Author**
-**Sneha Devare**  
-📊 Data Science & Analytics Student  
-🔗 **GitHub:** https://github.com/Sneha-Devare
+⭐ This project demonstrates how **SQL and data analysis can be used to solve real-world supply chain problems and improve inventory management.**
